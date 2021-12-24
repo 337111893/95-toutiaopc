@@ -1,5 +1,5 @@
 <template>
-  <h1>这是主页</h1>
+  <h1>这是主页11</h1>
 </template>
 
 <script>
