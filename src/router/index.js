@@ -1,18 +1,24 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '@/views/home'
+import Home from '@/views/home' // 引入主页
+import Login from '@/views/login' // 引入登录页
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    redirect: '/home'
+    redirect: '/login' // 强制跳转
   },
   {
-    path: '/home',
+    path: '/home', // 主页
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/login', // 登录页
+    name: 'login',
+    component: Login
   }
   // ,
   // 按需加载
